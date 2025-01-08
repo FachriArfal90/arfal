@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Menu - TokoKita</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            padding: 20px;
+        }
+
+        .order-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.1rem;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-stock {
+            color: #27ae60;
+            margin-bottom: 15px;
+        }
+
+        .order-button {
+            width: 100%;
+            padding: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .order-button:hover {
+            background: #2980b9;
+        }
+
+        .cart-section {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-icon {
+            font-size: 24px;
+            color: #3498db;
+        }
+
+        .cart-count {
+            background: #e74c3c;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 50%;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="order-container">
+        <div class="header">
+            <h1>TokoKita - Katalog Produk</h1>
+            <p>Temukan produk berkualitas dengan harga terbaik</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Product 1" class="product-image">
+                <h3 class="product-title">Laptop Gaming XYZ</h3>
+                <div class="product-price">Rp 15.000.000</div>
+                <div class="product-stock">Stok: 5 unit</div>
+                <button class="order-button">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Product 2" class="product-image">
+                <h3 class="product-title">Smartphone ABC</h3>
+                <div class="product-price">Rp 5.000.000</div>
+                <div class="product-stock">Stok: 10 unit</div>
+                <button class="order-button">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Product 3" class="product-image">
+                <h3 class="product-title">Headphone Premium</h3>
+                <div class="product-price">Rp 2.500.000</div>
+                <div class="product-stock">Stok: 15 unit</div>
+                <button class="order-button">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Product 4" class="product-image">
+                <h3 class="product-title">Smart Watch Pro</h3>
+                <div class="product-price">Rp 3.200.000</div>
+                <div class="product-stock">Stok: 8 unit</div>
+                <button class="order-button">Tambah ke Keranjang</button>
+            </div>
+        </div>
+
+        <div class="cart-section">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-count">0</span>
+        </div>
+    </div>
+</body>
+</html>
